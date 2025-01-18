@@ -24,8 +24,8 @@
   }
   @font-face {
     font-family: "Korataki";
-    src: url("./font/korataki.otf") format("woff2"),
-        url("./font/korataki.otf") format("woff");
+    src: url("./font/korataki.ttf") format("ttf"),
+        url("./font/korataki.ttf") format("ttf");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -187,7 +187,7 @@
   margin: 0 13% 60px;
  }
  .main_header{
-  font-family: "Korataki";
+  font-family: "Korataki", sans-serif;
   font-weight: 400;
   font-size: 44px;
   line-height: 61px;
@@ -480,6 +480,9 @@
 .footer_list-list-paragraph--margin5{
   width: 260px;
 }
+.list2 {
+  justify-content: space-between;
+}
 
 
 @media(max-width:1919px){
@@ -492,6 +495,7 @@
 .list2 {
   margin-right: 11%;
   width: 29%;
+  justify-content: space-between;
 }
 .header_list-item1:nth-child(1) {
   display: none;
@@ -581,7 +585,7 @@ display: none;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .main_list-item {
   margin-bottom: 50px;
@@ -767,5 +771,203 @@ grid-row-start: 7;
   display: block;
 }
 }
- 
- 
+@media (min-width: 1601px) {
+  .svg2 {
+      display: block;
+  }
+  .svg1 {
+        display: none;
+  }
+  .header_list-item1:nth-child(1) {
+    display: block;
+}
+}
+@media (min-width: 1100px) and (max-width: 1600px) {
+  .svg2 {
+      display: none;
+  }
+  .svg1 {
+        display: block;
+  }
+  .header_list-item1:nth-child(1) {
+    display: none;
+}
+.list2 {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-svg {
+  display: block;
+}
+.logo-svg2 {
+  display: none;
+}
+.burger{
+  display: none;
+}
+.header_section {
+  display: block;
+}
+.list1 {
+  display: flex;
+  max-width: 200px;
+}
+.main_list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.main_img{
+  width: 100%;
+}
+.main_h2{
+  text-align: left;
+}
+.div--flex{
+  text-align: left;
+  display: flex;
+  gap: 16px;
+}
+.main_span{
+  text-align: left;
+  display: flex;
+}
+.div--flex--destop{
+  display: none;
+}
+.img-button--color {
+  left: 0;
+  margin: 0 auto;
+}
+.list2{
+  margin-right: 0;
+  width: 400px;
+}
+.header_list{
+  padding: 0;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.header_list-item:nth-child(1) {
+  margin-right: 0;
+}
+.button--display{
+  position: absolute;
+}
+.img-button--color{
+  width: 90%;
+}
+.main{
+  width: 80%;
+  margin: 0 auto;
+}
+}
+@media(min-width: 770px){
+  .paragraph{
+    width: 280px;
+  }
+  .footer_list-list-item:nth-child(5) ul{
+    width: 138px;
+  }
+  .footer_list-list-item:nth-child(4) ul{
+    width: 260px;
+  }
+  .footer_list-list-item:nth-child(6) ul{
+    width: 260px;
+  }
+  
+}
+@media (min-width: 790px) and (max-width: 1599px) {
+  .footer{
+    padding: 0;
+  }
+  .footer_list{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer_list-list-item:nth-child(5){
+    text-align: left;
+    display: flex;
+    justify-content: right;
+  }
+  .footer_list-list-item:nth-child(4){
+    display: flex;
+    justify-content: center;
+  }
+  .paragraph{
+    width: 100%;
+    margin-left: 20px;
+  }
+  .footer_list-list-paragraph31{
+    display: block;
+  }
+  .footer_list-list1 li{
+    display: block;
+  }
+  .footer_list-list1 .footer_list-list-item:nth-child(4){
+    display: block;
+  }
+  .footer_list-list1 .footer_list-list-item:nth-child(5){
+    display: block;
+  }
+}
+@media(min-width: 400px) and (max-width: 768px){
+  .main_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+  .main_list-item{
+    width: 100%;
+  }
+  .main_img{
+    width: 100%;
+    height: 350px;
+  }
+  .main_h2 {
+    text-align: left;
+  }
+  .div--flex{
+    text-align: left;
+  }
+  .main_list-item:nth-child(2) span {
+    text-align: left;
+    display: flex;
+    justify-content: left;
+  }
+  .main_list-item:nth-child(4) span {
+    text-align: left;
+    display: flex;
+    justify-content: left;
+  }
+  .main_list{
+    margin-bottom: 400px;
+  }
+}
+@media(min-width: 0) and (max-width: 400px){
+  .main_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main_h2 {
+    text-align: left;
+  }
+  .div--flex{
+    text-align: left;
+  }
+  .main_list-item:nth-child(2) span {
+    text-align: left;
+    display: flex;
+    justify-content: left;
+  }
+  .main_list-item:nth-child(4) span {
+    text-align: left;
+    display: flex;
+    justify-content: left;
+  }
+  .main_list{
+    margin-bottom: 250px;
+  }
+}
